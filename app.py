@@ -21,6 +21,7 @@ next_id = max([jogo['id'] for jogo in jogos]) + 1 if jogos else 1
 def home():
    
     return jsonify({ 'mensagem':'Bem-vindo à minha API de jogos de videogame!'})
+# 2. Rota para pegar os dados de todos 0os jogos
 
 @app.route('/dados', methods=['GET'])
 def get_dados_jogos():
